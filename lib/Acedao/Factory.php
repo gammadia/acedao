@@ -22,4 +22,4 @@ class Factory {
         $object->loadFilters();
         return $object;
     }
-} 
+}
