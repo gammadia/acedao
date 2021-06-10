@@ -8,25 +8,25 @@ use Acedao\Queriable;
 class Buyer implements Queriable {
     use Dao;
 
-	/**
-	 * An array of field to select if nothing is provided in the query
-	 *
-	 * @return array
-	 */
-	public function getAllowedFields() {
-		return array('firstname', 'lastname');
-	}
+    /**
+     * An array of field to select if nothing is provided in the query
+     *
+     * @return array
+     */
+    public function getAllowedFields() {
+        return array('firstname', 'lastname');
+    }
 
-	/**
-	 * Defines all the query possibilities of the Queriable object (a table)
-	 * - join
-	 * - where
-	 * - orderby
-	 *
-	 * @return array
-	 */
-	public function defineFilters() {
-		return array(
+    /**
+     * Defines all the query possibilities of the Queriable object (a table)
+     * - join
+     * - where
+     * - orderby
+     *
+     * @return array
+     */
+    public function defineFilters() {
+        return array(
             'join' => array(
                 'car' => array(
                     'on' => array(
@@ -47,5 +47,5 @@ class Buyer implements Queriable {
                 )
             )
         );
-	}
+    }
 }

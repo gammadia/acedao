@@ -4,28 +4,28 @@ namespace Acedao\Brick;
 
 trait Validator {
 
-	/**
-	 * An array of fields that have to be set when inserting or updating
-	 * @return array
-	 */
-	abstract public function getMandatoryFields();
+    /**
+     * An array of fields that have to be set when inserting or updating
+     * @return array
+     */
+    abstract public function getMandatoryFields();
 
-	/**
-	 * An array that defines the fields that have to match a certain format
-	 * i.e. email, credit card number, alpha only, etc.
-	 * @return array
-	 */
-	abstract public function getFormattedFields();
+    /**
+     * An array that defines the fields that have to match a certain format
+     * i.e. email, credit card number, alpha only, etc.
+     * @return array
+     */
+    abstract public function getFormattedFields();
 
-	/**
-	 * This method will validate the data provided against fields
-	 * defined in the getMandatoryFields(), getFormattedFields() and getAllowedFields() methods.
-	 *
-	 * @param array $userProvidedData
+    /**
+     * This method will validate the data provided against fields
+     * defined in the getMandatoryFields(), getFormattedFields() and getAllowedFields() methods.
+     *
+     * @param array $userProvidedData
      * @param bool $allowUnknown
-	 * @return bool
-	 */
-	public function validate(array $userProvidedData, $allowUnknown = false) {
+     * @return bool
+     */
+    public function validate(array $userProvidedData, $allowUnknown = false) {
         $results = array(
             'success' => true,
             'data' => $userProvidedData
@@ -61,9 +61,9 @@ trait Validator {
             }
         }
 
-		// formatted fields
+        // formatted fields
 
 
-		return $results;
-	}
+        return $results;
+    }
 }

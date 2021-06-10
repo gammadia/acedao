@@ -7,25 +7,25 @@ use Acedao\Queriable;
 class Category implements Queriable {
     use Dao;
 
-	/**
-	 * An array of field to select if nothing is provided in the query
-	 *
-	 * @return array
-	 */
-	public function getAllowedFields() {
-		return array('name', 'description', 'enabled');
-	}
+    /**
+     * An array of field to select if nothing is provided in the query
+     *
+     * @return array
+     */
+    public function getAllowedFields() {
+        return array('name', 'description', 'enabled');
+    }
 
-	/**
-	 * Defines all the query possibilities of the Queriable object (a table)
-	 * - join
-	 * - where
-	 * - orderby
-	 *
-	 * @return array
-	 */
-	public function defineFilters() {
-		return array(
+    /**
+     * Defines all the query possibilities of the Queriable object (a table)
+     * - join
+     * - where
+     * - orderby
+     *
+     * @return array
+     */
+    public function defineFilters() {
+        return array(
             'join' => array(
                 'car' => array(
                     'on' => array(
@@ -44,5 +44,5 @@ class Category implements Queriable {
                 )
             )
         );
-	}
+    }
 }

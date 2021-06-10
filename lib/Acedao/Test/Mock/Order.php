@@ -12,25 +12,25 @@ class Order implements Queriable {
         $this->escapeTablename = true;
     }
 
-	/**
-	 * An array of field to select if nothing is provided in the query
-	 *
-	 * @return array
-	 */
-	public function getAllowedFields() {
-		return array('date', 'amount');
-	}
+    /**
+     * An array of field to select if nothing is provided in the query
+     *
+     * @return array
+     */
+    public function getAllowedFields() {
+        return array('date', 'amount');
+    }
 
-	/**
-	 * Defines all the query possibilities of the Queriable object (a table)
-	 * - join
-	 * - where
-	 * - orderby
-	 *
-	 * @return array
-	 */
-	public function defineFilters() {
-		return array(
+    /**
+     * Defines all the query possibilities of the Queriable object (a table)
+     * - join
+     * - where
+     * - orderby
+     *
+     * @return array
+     */
+    public function defineFilters() {
+        return array(
             'join' => array(
                 'car' => array(
                     'on' => array(
@@ -49,5 +49,5 @@ class Order implements Queriable {
                 )
             )
         );
-	}
+    }
 }
