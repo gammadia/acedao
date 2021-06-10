@@ -1,6 +1,5 @@
-vendor
-*.iml
-_site
-.vagrant
-VagrantFile
-vagrant-bootstrap.sh
+var/
+vendor/
+phpunit.xml
+.phpunit.result.cache
+composer.lock

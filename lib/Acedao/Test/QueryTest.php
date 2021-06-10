@@ -4,12 +4,8 @@ namespace Acedao\Test;
 
 use Acedao\Container;
 use Acedao\Exception;
-use Acedao\Factory;
-use Acedao\Test\Mock\Buyer;
-use Acedao\Test\Mock\Car;
-use Acedao\Test\Mock\Equipment;
 
-class QueryTest extends \PHPUnit_Framework_TestCase {
+class QueryTest extends \PHPUnit\Framework\TestCase {
 
     /**
      * @var Container
@@ -21,7 +17,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
      */
     public $query;
 
-    public function setUp() {
+    protected function setUp(): void {
 
         $container = new Container(array(
             'mode' => 'strict',
@@ -102,6 +98,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
         try {
             $this->assertEquals($expected, $this->query->getSelectedFields($initial_config));
         } catch (Exception\MissingDependencyException $e) {
+            $this->addToAssertionCount(1);
             return;
         } catch (Exception $e) {
             $this->fail("MissingDependencyException should have been raised. Another Exception was raised instead.");
@@ -439,6 +436,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
             $options = array('2013-12-31');
             $this->query->mapFilterParametersNames($sql, $options);
         } catch (Exception\WrongParameterException $e) {
+            $this->addToAssertionCount(1);
             return;
         }
 
@@ -452,6 +450,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
             $options = array(':start' => '2013-12-31', ':fin' => '2014-01-21');
             $this->query->mapFilterParametersNames($sql, $options);
         } catch (Exception\MissingKeyException $e) {
+            $this->addToAssertionCount(1);
             return;
         }
 
@@ -494,6 +493,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
         try {
             $this->query->extractFilterAliasAndTable($data, $filtername);
         } catch (Exception $e) {
+            $this->addToAssertionCount(1);
             return;
         }
 
@@ -637,6 +637,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase {
             // construction de la requête SQL
             $this->query->prepareSelectSql($parts, $config);
         } catch (Exception\WrongParameterException $e) {
+            $this->addToAssertionCount(1);
             return;
         }
 

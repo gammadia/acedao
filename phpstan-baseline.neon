@@ -1,0 +1,1682 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Binary operation \"\\.\" between 0\\|0\\.0\\|array\\(\\)\\|string\\|false\\|null and \\(int\\|string\\) results in an error\\.$#"
+			count: 1
+			path: lib/Acedao/Container.php
+
+		-
+			message: "#^Method Acedao\\\\Container\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Container.php
+
+		-
+			message: "#^If condition is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:__construct\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:all\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:all\\(\\) has parameter \\$params with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:all\\(\\) has parameter \\$sql with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:execute\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:init\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:insertId\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:one\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:one\\(\\) has parameter \\$params with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:one\\(\\) has parameter \\$sql with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:prepare\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:prepare\\(\\) has parameter \\$params with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:prepare\\(\\) has parameter \\$sql with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Database\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Property Acedao\\\\Database\\:\\:\\$config has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Unreachable statement \\- code above always terminates\\.$#"
+			count: 1
+			path: lib/Acedao/Database.php
+
+		-
+			message: "#^Method Acedao\\\\Factory\\:\\:load\\(\\) has parameter \\$acedaoContainer with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Factory.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(Container Le container qui contient acedao ainsi que toutes les autres DAO\\)\\: Unexpected token \"Le\", expected variable at offset 102$#"
+			count: 1
+			path: lib/Acedao/Factory.php
+
+		-
+			message: "#^Parameter \\#1 \\$function of function call_user_func_array expects callable\\(\\)\\: mixed, array\\(Acedao\\\\Queriable, 'construct'\\) given\\.$#"
+			count: 1
+			path: lib/Acedao/Factory.php
+
+		-
+			message: "#^Method Acedao\\\\Queriable\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Queriable.php
+
+		-
+			message: "#^Method Acedao\\\\Queriable\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Queriable.php
+
+		-
+			message: "#^Access to an undefined property Acedao\\\\Queriable\\:\\:\\$escapeTablename\\.$#"
+			count: 3
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Argument of an invalid type array\\|true supplied for foreach, only iterables are supported\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Call to an undefined method Acedao\\\\Queriable\\:\\:getDefaultFields\\(\\)\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Call to an undefined method Acedao\\\\Queriable\\:\\:getJournalizeUser\\(\\)\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Call to function is_string\\(\\) with array will always evaluate to false\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Cannot access an offset on array\\|false\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Cannot access offset 'alias' on array\\|true\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Cannot access offset 'from' on array\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Cannot access offset 'on' on array\\|true\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$reference with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$table with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseIt\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseIt\\(\\) has parameter \\$aliases with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseIt\\(\\) has parameter \\$queryPart with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseIt\\(\\) has parameter \\$tableNames with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseSelectedFields\\(\\) has parameter \\$select with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliaseSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$alias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$child with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$childAlias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$reference with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applyConditions\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applyConditions\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applyConditions\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applySorts\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applySorts\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:applySorts\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:defineSelectedFields\\(\\) has parameter \\$defaultFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:defineSelectedFields\\(\\) has parameter \\$exclusiveOptions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:defineSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:delete\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:extractAlias\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) has parameter \\$data with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:formatQueryParamsKeys\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:formatQueryParamsKeys\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:formatQueryParamsKeys\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:fusionRecords\\(\\) has parameter \\$one with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:fusionRecords\\(\\) has parameter \\$two with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:fusionRecords\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:get\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:get\\(\\) has parameter \\$part with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:get\\(\\) has parameter \\$result with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getAliasSeparator\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getAliasesReferences\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getAliasesTree\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getConditionString\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getDependency\\(\\) has parameter \\$tablename with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getPathAlias\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getSelectedFields\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getSortDirection\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getTableNameFromAlias\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:getTableNameFromAlias\\(\\) should return string but returns false\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:hydrate\\(\\) has parameter \\$results with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:hydrate\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:initDatas\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:insert\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:joinTable\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:joinTable\\(\\) has parameter \\$caller with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:joinTable\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:joinTable\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:manageRelationsType\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:manageRelationsType\\(\\) has parameter \\$record with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:mapFilterParametersNames\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:mapFilterParametersNames\\(\\) has parameter \\$sql with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:mapFilterParametersNames\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:nameAliasesSelectedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:nameAliasesSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:prepareConfig\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:prepareConfig\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:prepareSelect\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:prepareSelectSql\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:prepareSelectSql\\(\\) has parameter \\$parts with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:registerAlias\\(\\) has parameter \\$joinedTableFilters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:registerAlias\\(\\) has parameter \\$localTableFilters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:retrieveFilter\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:select\\(\\) has parameter \\$config with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:select\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setAliasesReferences\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setAliasesReferences\\(\\) has parameter \\$refs with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setAliasesTree\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setAliasesTree\\(\\) has parameter \\$tree with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setRelationTypes\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:setRelationTypes\\(\\) has parameter \\$types with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Method Acedao\\\\Query\\:\\:update\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Offset 'join' on array\\('table' \\=\\> mixed\\) in isset\\(\\) does not exist\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Offset 0 does not exist on \\(array\\<int, string\\>\\|false\\)\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Offset 1 does not exist on \\(array\\<int, string\\>\\|false\\)\\.$#"
+			count: 3
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$alias string L'alias dans lequel on veut ajouter un élément\\)\\: Unexpected token \"\\$alias\", expected type at offset 148$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 160$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$child array L'élément à ajouter\\)\\: Unexpected token \"\\$child\", expected type at offset 292$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$childAlias string L'alias de l'élément à ajouter\\)\\: Unexpected token \"\\$childAlias\", expected type at offset 225$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$config\\)\\: Unexpected token \"\\$config\", expected type at offset 68$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$data\\)\\: Unexpected token \"\\$data\", expected type at offset 103$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 123$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 160$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 70$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$record\\)\\: Unexpected token \"\\$record\", expected type at offset 58$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$reference array L'arbre des alias, passé en référence\\)\\: Unexpected token \"\\$reference\", expected type at offset 76$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$reference\\)\\: Unexpected token \"\\$reference\", expected type at offset 114$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$sql\\)\\: Unexpected token \"\\$sql\", expected type at offset 141$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$table\\)\\: Unexpected token \"\\$table\", expected type at offset 139$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$tablename\\)\\: Unexpected token \"\\$tablename\", expected type at offset 18$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\|int given\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Parameter \\#2 \\$haystack of function in_array expects array, array\\<string, string\\>\\|false given\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Parameter \\#2 \\$pieces of function implode expects array, array\\|false given\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Parameter \\#2 \\$pieces of function implode expects array, array\\|true given\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$args of function array_merge expects array, array\\|bool given\\.$#"
+			count: 2
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$aliasesReferences has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$aliasesTree has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$classnames has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$queryConfig has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$relationTableNames has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Property Acedao\\\\Query\\:\\:\\$relationTypes has no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Query.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Buyer\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Buyer.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Car\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Car\\\\Category\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Category.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Car\\\\Equipment\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Car/Equipment.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Equipment\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Equipment.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:beginTransaction\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:commit\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:construct\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:delete\\(\\) has parameter \\$userConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:getAllowedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:getDefaultFields\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:getFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:rollback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:save\\(\\) has parameter \\$allowedFields with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:save\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:save\\(\\) should return int but returns bool\\|int\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:save\\(\\) should return int but returns true\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\Mock\\\\Order\\:\\:select\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Property Acedao\\\\Test\\\\Mock\\\\Order\\:\\:\\$filters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/Mock/Order.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:baseQuery\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:getSinisterAliasesBaseForRegister\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerExtractFilterAliasAndTable\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerFormatQueryParamsKeys\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerGetPathAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerGetSelectedFieldsProvided\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerMapFilterParametersNames\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerNameAliasesSelectedFields\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerRegisterAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerRetrieveFilter\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerTestExtractAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerTestFullQuery\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:providerTestGettingConditionsString\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testAliaseSelectedFields\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testEscapeTableNameInFromClause\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testEscapeTableNameInJoinClause\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractAlias\\(\\) has parameter \\$expected with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTable\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTable\\(\\) has parameter \\$expected with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTable\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTableExceptionAliasNotFound\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFormatQueryParamsKeys\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFormatQueryParamsKeys\\(\\) has parameter \\$after with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFormatQueryParamsKeys\\(\\) has parameter \\$before with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFullQuery\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFullQuery\\(\\) has parameter \\$config with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFullQuery\\(\\) has parameter \\$expectedString with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has parameter \\$expected with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetSelectedFieldsProvided\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetSelectedFieldsProvided\\(\\) has parameter \\$expected with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetSelectedFieldsProvided\\(\\) has parameter \\$initialConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetSelectedFieldsProvidedExceptionMissingDependency\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetSortDirection\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$connector with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$data with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$expectedString with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testLimitBadFormatException\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$expected with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$sql with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNamesExceptionBadKeysMatching\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNamesExceptionNotEnough\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testNameAliasesSelectedFields\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testNameAliasesSelectedFields\\(\\) has parameter \\$after with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testNameAliasesSelectedFields\\(\\) has parameter \\$before with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseRefs with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseTree with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseTypes with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$expected with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$joinedJoins with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$localJoins with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$parentAlias with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$relation with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$table with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAliasSecondLevel\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$expected with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$name with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$type with no typehint specified\\.$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 103$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 15$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$baseRefs\\)\\: Unexpected token \"\\$baseRefs\", expected type at offset 36$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$baseTree\\)\\: Unexpected token \"\\$baseTree\", expected type at offset 15$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$baseTypes\\)\\: Unexpected token \"\\$baseTypes\", expected type at offset 57$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$config\\)\\: Unexpected token \"\\$config\", expected type at offset 18$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$connector\\)\\: Unexpected token \"\\$connector\", expected type at offset 87$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$data\\)\\: Unexpected token \"\\$data\", expected type at offset 18$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 207$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 33$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 44$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 51$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 58$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expectedString\\)\\: Unexpected token \"\\$expectedString\", expected type at offset 112$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$expectedString\\)\\: Unexpected token \"\\$expectedString\", expected type at offset 40$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 18$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 38$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$joinedJoins\\)\\: Unexpected token \"\\$joinedJoins\", expected type at offset 162$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$localJoins\\)\\: Unexpected token \"\\$localJoins\", expected type at offset 139$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$name\\)\\: Unexpected token \"\\$name\", expected type at offset 38$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 31$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 64$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$parentAlias\\)\\: Unexpected token \"\\$parentAlias\", expected type at offset 79$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$relation\\)\\: Unexpected token \"\\$relation\", expected type at offset 186$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$sql\\)\\: Unexpected token \"\\$sql\", expected type at offset 15$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$table\\)\\: Unexpected token \"\\$table\", expected type at offset 121$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(\\$type\\)\\: Unexpected token \"\\$type\", expected type at offset 18$#"
+			count: 1
+			path: lib/Acedao/Test/QueryTest.php
+

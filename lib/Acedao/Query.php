@@ -1168,7 +1168,7 @@ class Query {
      * @param bool $debug
      * @return int
      */
-    final private function insert($tableName, $data, $debug = false) {
+    private function insert($tableName, $data, $debug = false) {
 
         $sqlStmt = "INSERT INTO `" . $tableName . "` ";
 
@@ -1197,7 +1197,7 @@ class Query {
      * @param bool $debug
      * @return int
      */
-    final private function update($tableName, $data, $debug = false) {
+    private function update($tableName, $data, $debug = false) {
 
         $sqlStmt = "UPDATE `" . $tableName . "` SET ";
 
