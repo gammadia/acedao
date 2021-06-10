@@ -54,7 +54,7 @@ class Query {
     }
 
     /**
-     * @param $tablename
+     * @param string $tablename
      * @return Queriable
      * @throws Exception
      */
@@ -126,7 +126,7 @@ class Query {
                 $item = ':' . $item;
             return $item;
         }, array_keys($params));
-        return array_combine($keys, array_values($params));
+        return (array) array_combine($keys, array_values($params));
     }
 
     /**
@@ -286,7 +286,7 @@ class Query {
     /**
      * Lance une requête SELECT sur la BD
      *
-     * @param $config
+     * @param mixed[] $config
      * @param bool $debug
      * @return array
      * @throws Exception
@@ -329,7 +329,10 @@ class Query {
      * @return int Le nombre de records supprimés
      */
     public function delete($config, $id = null) {
-        if (!is_array($config) && $id) {
+        if (!is_array($config)) {
+            if (!$id) {
+                throw new \UnexpectedValueException('You must pass an ID if $config is not an array.');
+            }
             $sqlStmt = "DELETE FROM `" . $config . "` WHERE `id` = :id";
             return $this->container['db']->execute($sqlStmt, array(':id' => $id));
         }
@@ -417,11 +420,15 @@ class Query {
             $relations = array();
             $path_exclude = array();
             foreach ($line as $fieldname => $value) {
-                $t = explode($this->getAliasSeparator(), $fieldname);
+                /** @var string[] $t */
+                $t = (array) explode($this->getAliasSeparator(), $fieldname);
                 if ($t[0] == $alias) {
                     $record[$t[1]] = $value;
                 } else {
                     $path = $this->getPathAlias($t[0]);
+                    if (!$path) {
+                        throw new \UnexpectedValueException(sprintf('Cannot get a path for alias "%s"', $t[0]));
+                    }
                     $path_test = implode('_', $path);
 
                     // si y a pas d'id, on considère que c'est un join sur rien...
@@ -478,8 +485,8 @@ class Query {
     /**
      * Inspection du nom du filtre pour savoir sur quelle table il s'applique
      *
-     * @param $data
-     * @param $filtername
+     * @param mixed[] $data
+     * @param string $filtername
      * @return array
      * @throws Exception
      */
@@ -567,7 +574,7 @@ class Query {
 
         // traitement des paramètres
         if (isset($options) && $options !== null) {
-            $this_condition_parameters = $this->mapFilterParametersNames($where_str, $options);
+            $this_condition_parameters = (array) $this->mapFilterParametersNames($where_str, $options);
             $data['params'] = array_merge($data['params'], $this_condition_parameters);
         }
     }
@@ -647,15 +654,15 @@ class Query {
             }
         }
 
-        return implode(' ' . trim($connector) . ' ', $filter);
+        return implode(' ' . trim($connector) . ' ', (array) $filter);
     }
 
     /**
      * Tentative de mapping entre les paramètres (:param1) de la query SQL et le tableau
      * d'options fournis.
      *
-     * @param $sql
-     * @param $options
+     * @param string $sql
+     * @param mixed[]|mixed $options
      * @return array|bool
      * @throws Exception
      */
@@ -751,7 +758,7 @@ class Query {
         }
 
         // création du SQL et gestion de la direction
-        $orderby_str = implode(', ', $filter);
+        $orderby_str = implode(', ', (array) $filter);
         $orderby_str = str_replace(':dir', $this->getSortDirection($options), $orderby_str);
         $data['parts']['orderby'][] = $orderby_str;
     }
@@ -759,7 +766,7 @@ class Query {
     /**
      * Récupération de la direction du tri
      *
-     * @param $options
+     * @param mixed[]|mixed $options
      * @return string [asc, desc]
      * @throws Exception
      */
@@ -841,7 +848,7 @@ class Query {
     /**
      * Gestion des relations 1-n
      *
-     * @param $record
+     * @param array<string, mixed> $record
      */
     public function manageRelationsType(&$record) {
         foreach ($record as $fieldname => &$content) {
@@ -985,7 +992,7 @@ class Query {
             foreach ($options['on'] as $filter => $value) {
                 $condition_string = $this->getConditionString($data, $filter, $value);
 
-                $this_condition_parameters = $this->mapFilterParametersNames($condition_string, $value);
+                $this_condition_parameters = (array) $this->mapFilterParametersNames($condition_string, $value);
                 $data['params'] = array_merge($data['params'], $this_condition_parameters);
 
                 $custom_on = array_merge($custom_on, array($condition_string));
@@ -1100,9 +1107,9 @@ class Query {
     /**
      * Stockage de la correspondance alias-table dans un simple tableau sans hiérarchie
      *
-     * @param $reference
-     * @param $table
-     * @param $alias
+     * @param mixed[] $reference
+     * @param string $table
+     * @param string $alias
      */
     public function addFlatAlias(&$reference, $table, $alias) {
         $reference[$table][] = $alias;
@@ -1111,10 +1118,10 @@ class Query {
     /**
      * Ajout d'un élément dans l'arbre des alias
      *
-     * @param $reference array L'arbre des alias, passé en référence
-     * @param $alias string L'alias dans lequel on veut ajouter un élément
-     * @param $childAlias string L'alias de l'élément à ajouter
-     * @param $child array L'élément à ajouter
+     * @param mixed[] $reference array L'arbre des alias, passé en référence
+     * @param string $alias L'alias dans lequel on veut ajouter un élément
+     * @param string $childAlias L'alias de l'élément à ajouter
+     * @param mixed[] $child L'élément à ajouter
      * @return bool
      */
     public function aliasesTreeAddChild(&$reference, $alias, $childAlias, $child) {

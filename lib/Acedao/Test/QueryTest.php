@@ -127,9 +127,9 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $type
-     * @param $name
-     * @param $expected
+     * @param string $type
+     * @param string $name
+     * @param bool|mixed[] $expected
      *
      * @dataProvider providerRetrieveFilter
      */
@@ -194,8 +194,8 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $alias
-     * @param $expected
+     * @param string $alias
+     * @param mixed[]|bool $expected
      *
      * @dataProvider providerGetPathAlias
      */
@@ -215,16 +215,16 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $baseTree
-     * @param $baseRefs
-     * @param $baseTypes
-     * @param $parentAlias
-     * @param $alias
-     * @param $table
-     * @param $localJoins
-     * @param $joinedJoins
-     * @param $relation
-     * @param $expected
+     * @param mixed[] $baseTree
+     * @param mixed[] $baseRefs
+     * @param mixed[] $baseTypes
+     * @param string $parentAlias
+     * @param string $alias
+     * @param string $table
+     * @param mixed[] $localJoins
+     * @param mixed[] $joinedJoins
+     * @param string $relation
+     * @param mixed[] $expected
      *
      * @dataProvider providerRegisterAlias
      */
@@ -367,9 +367,9 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $sql
-     * @param $options
-     * @param $expected
+     * @param string $sql
+     * @param mixed[] $options
+     * @param mixed[]|bool $expected
      *
      * @dataProvider providerMapFilterParametersNames
      */
@@ -465,8 +465,8 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $filtername
-     * @param $expected
+     * @param string $filtername
+     * @param mixed[] $expected
      *
      * @dataProvider providerExtractFilterAliasAndTable
      */
@@ -531,11 +531,11 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $data
-     * @param $filtername
-     * @param $options
-     * @param $connector
-     * @param $expectedString
+     * @param mixed[] $data
+     * @param string $filtername
+     * @param mixed[] $options
+     * @param string $connector
+     * @param string $expectedString
      *
      * @dataProvider providerTestGettingConditionsString
      */
@@ -610,8 +610,8 @@ class QueryTest extends \PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @param $config
-     * @param $expectedString
+     * @param mixed[] $config
+     * @param string $expectedString
      *
      * @dataProvider providerTestFullQuery
      */

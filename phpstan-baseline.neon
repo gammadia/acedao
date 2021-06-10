@@ -116,11 +116,6 @@ parameters:
 			path: lib/Acedao/Factory.php
 
 		-
-			message: "#^Parameter \\#1 \\$function of function call_user_func_array expects callable\\(\\)\\: mixed, array\\(Acedao\\\\Queriable, 'construct'\\) given\\.$#"
-			count: 1
-			path: lib/Acedao/Factory.php
-
-		-
 			message: "#^Method Acedao\\\\Queriable\\:\\:defineFilters\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/Acedao/Queriable.php
@@ -156,17 +151,7 @@ parameters:
 			path: lib/Acedao/Query.php
 
 		-
-			message: "#^Cannot access an offset on array\\|false\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
 			message: "#^Cannot access offset 'alias' on array\\|true\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Cannot access offset 'from' on array\\|int\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -177,21 +162,6 @@ parameters:
 
 		-
 			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$reference with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:addFlatAlias\\(\\) has parameter \\$table with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -222,26 +192,6 @@ parameters:
 
 		-
 			message: "#^Method Acedao\\\\Query\\:\\:aliaseSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$alias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$child with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$childAlias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:aliasesTreeAddChild\\(\\) has parameter \\$reference with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -301,16 +251,6 @@ parameters:
 			path: lib/Acedao/Query.php
 
 		-
-			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) has parameter \\$data with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
 			message: "#^Method Acedao\\\\Query\\:\\:extractFilterAliasAndTable\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
@@ -322,11 +262,6 @@ parameters:
 
 		-
 			message: "#^Method Acedao\\\\Query\\:\\:formatQueryParamsKeys\\(\\) return type has no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:formatQueryParamsKeys\\(\\) should return array but returns array\\|false\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -381,11 +316,6 @@ parameters:
 			path: lib/Acedao/Query.php
 
 		-
-			message: "#^Method Acedao\\\\Query\\:\\:getDependency\\(\\) has parameter \\$tablename with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
 			message: "#^Method Acedao\\\\Query\\:\\:getPathAlias\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
@@ -397,11 +327,6 @@ parameters:
 
 		-
 			message: "#^Method Acedao\\\\Query\\:\\:getSelectedFields\\(\\) return type has no value type specified in iterable type array\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:getSortDirection\\(\\) has parameter \\$options with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -457,21 +382,6 @@ parameters:
 
 		-
 			message: "#^Method Acedao\\\\Query\\:\\:manageRelationsType\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:manageRelationsType\\(\\) has parameter \\$record with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:mapFilterParametersNames\\(\\) has parameter \\$options with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Method Acedao\\\\Query\\:\\:mapFilterParametersNames\\(\\) has parameter \\$sql with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
 
@@ -536,11 +446,6 @@ parameters:
 			path: lib/Acedao/Query.php
 
 		-
-			message: "#^Method Acedao\\\\Query\\:\\:select\\(\\) has parameter \\$config with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
 			message: "#^Method Acedao\\\\Query\\:\\:select\\(\\) return type has no value type specified in iterable type array\\.$#"
 			count: 1
 			path: lib/Acedao/Query.php
@@ -586,112 +491,7 @@ parameters:
 			path: lib/Acedao/Query.php
 
 		-
-			message: "#^Offset 0 does not exist on \\(array\\<int, string\\>\\|false\\)\\.$#"
-			count: 2
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Offset 1 does not exist on \\(array\\<int, string\\>\\|false\\)\\.$#"
-			count: 3
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$alias string L'alias dans lequel on veut ajouter un élément\\)\\: Unexpected token \"\\$alias\", expected type at offset 148$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 160$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$child array L'élément à ajouter\\)\\: Unexpected token \"\\$child\", expected type at offset 292$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$childAlias string L'alias de l'élément à ajouter\\)\\: Unexpected token \"\\$childAlias\", expected type at offset 225$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$config\\)\\: Unexpected token \"\\$config\", expected type at offset 68$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$data\\)\\: Unexpected token \"\\$data\", expected type at offset 103$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 123$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 160$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 70$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$record\\)\\: Unexpected token \"\\$record\", expected type at offset 58$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$reference array L'arbre des alias, passé en référence\\)\\: Unexpected token \"\\$reference\", expected type at offset 76$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$reference\\)\\: Unexpected token \"\\$reference\", expected type at offset 114$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$sql\\)\\: Unexpected token \"\\$sql\", expected type at offset 141$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$table\\)\\: Unexpected token \"\\$table\", expected type at offset 139$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$tablename\\)\\: Unexpected token \"\\$tablename\", expected type at offset 18$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Parameter \\#1 \\$arr1 of function array_merge expects array, array\\|int given\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
 			message: "#^Parameter \\#2 \\$haystack of function in_array expects array, array\\<string, string\\>\\|false given\\.$#"
-			count: 2
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Parameter \\#2 \\$pieces of function implode expects array, array\\|false given\\.$#"
-			count: 1
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Parameter \\#2 \\$pieces of function implode expects array, array\\|true given\\.$#"
-			count: 2
-			path: lib/Acedao/Query.php
-
-		-
-			message: "#^Parameter \\#2 \\.\\.\\.\\$args of function array_merge expects array, array\\|bool given\\.$#"
 			count: 2
 			path: lib/Acedao/Query.php
 
@@ -1301,16 +1101,6 @@ parameters:
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTable\\(\\) has parameter \\$expected with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTable\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testExtractFilterAliasAndTableExceptionAliasNotFound\\(\\) has no return typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
@@ -1336,27 +1126,7 @@ parameters:
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFullQuery\\(\\) has parameter \\$config with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testFullQuery\\(\\) has parameter \\$expectedString with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGetPathAlias\\(\\) has parameter \\$expected with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
 
@@ -1391,52 +1161,12 @@ parameters:
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$connector with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$data with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$expectedString with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$filtername with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testGettingConditionStringFromFilter\\(\\) has parameter \\$options with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testLimitBadFormatException\\(\\) has no return typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$expected with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$options with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testMapFilterParametersNames\\(\\) has parameter \\$sql with no typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
 
@@ -1471,212 +1201,12 @@ parameters:
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$alias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseRefs with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseTree with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$baseTypes with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$expected with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$joinedJoins with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$localJoins with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$parentAlias with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$relation with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAlias\\(\\) has parameter \\$table with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRegisterAliasSecondLevel\\(\\) has no return typehint specified\\.$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
 
 		-
 			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has no return typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$expected with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$name with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^Method Acedao\\\\Test\\\\QueryTest\\:\\:testRetrieveFilter\\(\\) has parameter \\$type with no typehint specified\\.$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 103$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$alias\\)\\: Unexpected token \"\\$alias\", expected type at offset 15$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$baseRefs\\)\\: Unexpected token \"\\$baseRefs\", expected type at offset 36$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$baseTree\\)\\: Unexpected token \"\\$baseTree\", expected type at offset 15$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$baseTypes\\)\\: Unexpected token \"\\$baseTypes\", expected type at offset 57$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$config\\)\\: Unexpected token \"\\$config\", expected type at offset 18$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$connector\\)\\: Unexpected token \"\\$connector\", expected type at offset 87$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$data\\)\\: Unexpected token \"\\$data\", expected type at offset 18$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 207$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 33$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 44$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 51$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expected\\)\\: Unexpected token \"\\$expected\", expected type at offset 58$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expectedString\\)\\: Unexpected token \"\\$expectedString\", expected type at offset 112$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$expectedString\\)\\: Unexpected token \"\\$expectedString\", expected type at offset 40$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 18$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$filtername\\)\\: Unexpected token \"\\$filtername\", expected type at offset 38$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$joinedJoins\\)\\: Unexpected token \"\\$joinedJoins\", expected type at offset 162$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$localJoins\\)\\: Unexpected token \"\\$localJoins\", expected type at offset 139$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$name\\)\\: Unexpected token \"\\$name\", expected type at offset 38$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 31$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$options\\)\\: Unexpected token \"\\$options\", expected type at offset 64$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$parentAlias\\)\\: Unexpected token \"\\$parentAlias\", expected type at offset 79$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$relation\\)\\: Unexpected token \"\\$relation\", expected type at offset 186$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$sql\\)\\: Unexpected token \"\\$sql\", expected type at offset 15$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$table\\)\\: Unexpected token \"\\$table\", expected type at offset 121$#"
-			count: 1
-			path: lib/Acedao/Test/QueryTest.php
-
-		-
-			message: "#^PHPDoc tag @param has invalid value \\(\\$type\\)\\: Unexpected token \"\\$type\", expected type at offset 18$#"
 			count: 1
 			path: lib/Acedao/Test/QueryTest.php
 

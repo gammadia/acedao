@@ -18,7 +18,9 @@ class Factory {
         $object = new $name();
         $object->setTableName($tableName);
         $object->init($acedaoContainer);
-        call_user_func_array(array($object, 'construct'), $params);
+        /** @var callable $callback */
+        $callback = array($object, 'construct');
+        call_user_func_array($callback, $params);
         $object->loadFilters();
         return $object;
     }
